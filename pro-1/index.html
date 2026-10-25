@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task manager</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+
+      <!--^ header -->
+      <header>
+        <!-- left -->
+        <div class="left">
+          <h2>Task manager</h2>
+        </div>
+        <!-- right -->
+         <div class="right">
+          <button class="header-btn">Add task</button>
+         </div>
+      </header>
+      <!-- ^ header end -->
+
+      <!-- ^container -->
+       <div class="outer-main">
+        <!-- task-container-1  -->
+        <div id="todo" class="task-container">
+          <div class="heading">
+            <div class="left">todo</div>
+            <div class="right">count</div>
+          </div>
+
+          <!-- <div class="task" draggable="true">
+            <h3>task1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur, inventore.</p>
+            <button class="dlt-btn">Delete</button>
+          </div> -->
+        </div>
+
+        <!-- task-container-2  -->
+        <div id="progress" class="task-container">
+           <div class="heading">
+            <div class="left">progress</div>
+            <div class="right">count</div>
+          </div>
+        </div>
+
+        <!-- task-container-3  -->
+        <div id="done" class="task-container">
+           <div class="heading">
+            <div class="left">done</div>
+            <div class="right">count</div>
+          </div>
+        </div>
+       </div>
+      <!-- ^container end -->
+    </main>
+
+    <!-- ^ form -->
+     <div class="bg">
+      <div class="form">
+      <input class="input" type="text" placeholder="Enter title">
+      <textarea class="textarea" placeholder="Enter description"></textarea>
+      <button class="add-new-task" type="submit">Add task</button>
+      </div>
+
+     </div>
+    <!-- ^ form-end  -->
+    
+    <script src="app.js"></script>
+  </body>
+</html>

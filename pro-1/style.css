@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --button-padding:12px 25px;
+    --button-radius:25px;
+
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    padding: 2rem 5rem;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-btn{
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    outline: none;
+    border: none;
+    transition: ease all 0.5s;
+    cursor: pointer;
+}
+.header-btn:hover{
+    scale: 1.1;
+
+}
+
+/* * header end */
+
+.outer-main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.outer-main .task-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 15px;
+    padding: 10px;
+    transition: ease all 0.5s;
+}
+.outer-main .task-container.hover-over{
+border:1px dashed white;
+scale: 1.07;
+}
+
+.outer-main .task-container .heading{
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    
+}
+
+/* task */
+.task{
+    padding: 10px 20px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+}
+.task 
+.dlt-btn{
+    align-self: flex-end;
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    outline: none;
+    border: none;
+    background-color: red;
+    color: white;
+    transition: ease all 0.3s;
+}
+.task .dlt-btn:hover{
+    scale: 1.05;
+    cursor: pointer;
+
+}
+/** outer container end */
+
+
+/* *task form */
+.bg{
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 10; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.205);
+    backdrop-filter: blur(5px);
+}
+.active{
+    display: flex;
+}
+.form{
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.form .input ,.form .textarea{
+    width: 100%;
+    background-color: rgb(64, 64, 64);
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    border-radius: 10px;
+    color: white;
+}
+.form button{
+     padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    outline: none;
+    border: none;
+    transition: ease all 0.5s;
+    cursor: pointer;
+}
+/* *task form */

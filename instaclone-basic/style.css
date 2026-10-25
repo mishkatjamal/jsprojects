@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .left-panel{
+height: 100%;
+width: 100px;
+/* background-color: red; */
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+gap: 10px;
+justify-content: space-between;
+align-items: center;
+padding: 40px 5px;
+}
+.left-panel h4 i{
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+}
+.left-panel-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+
+/* * all reels  */
+.all-reels{
+    width: 50%;
+    /* height: 100%; */
+    height: 100vh;
+     overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    
+}
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+.reel{
+    /* background-color: red; */
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 20px 0px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+/* * left inside reels */
+.reel .reel-left{
+    justify-content: flex-end;
+width: 70%;
+align-items: start;
+/* background-color: red; */
+display: flex;
+gap: 10px;
+flex-direction: column;
+/* background-color: green; */
+}
+
+.reel-left-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+.reel-left-top button {
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.reel-left-top img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+}
+
+
+.reel-left-bottom{
+    color: white;
+}
+
+/* * left side center  */
+
+.reel-center{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.reel-center img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* * right div*/
+.reel-right{
+width: 10%;
+padding: 10px;
+padding-bottom: 30px;
+/* background-color: red; */
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+gap: 20px;
+align-items: center;
+}
+.reel-right h4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.reel-right h4 i{
+    font-size: 25px;
+    font-weight: 300;
+    color: white;
+    pointer-events: none;
+}
+.reel-right h4 p{
+    color: white;
+    font-weight: 300;
+}
+
+.reel-right img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.love{
+    color: red !important;
+}
